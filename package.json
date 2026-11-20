@@ -17,9 +17,9 @@
     "mongo:up": "node scripts/mongo-local.js"
   },
   "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^7.0.0",
     "dotenv": "^18.0.8",
-    "hardhat": "^2.22.0"
+    "hardhat": "^3.22.0"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^5.0.2"
