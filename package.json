@@ -1,0 +1,27 @@
+{
+  "name": "ev-charging-trust",
+  "version": "1.0.0",
+  "description": "Blockchain-based EV charging authentication with dynamic trust management",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "besu:up": "node scripts/besu-network.js up",
+    "besu:down": "node scripts/besu-network.js down",
+    "besu:deploy": "node scripts/deploy-course.js",
+    "besu:stations": "node scripts/provision-course-stations.js",
+    "besu:oracles": "node scripts/start-oracles.js",
+    "besu:verify": "node scripts/verify-besu.js",
+    "mongo:up": "node scripts/mongo-local.js"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^18.0.8",
+    "hardhat": "^2.22.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2"
+  }
+}

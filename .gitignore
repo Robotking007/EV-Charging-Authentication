@@ -1,0 +1,9 @@
+node_modules/
+artifacts/
+cache/
+__pycache__/
+.env
+trust-engine/reputation-store.json
+frontend/dist/
+frontend/src/deployedAddress.json
+.local-chain/

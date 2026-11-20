@@ -1,0 +1,113 @@
+.network-content {
+  display: grid;
+  gap: 16px;
+  margin: auto;
+  max-width: 1240px;
+  padding: 12px 0 24px;
+}
+
+.network-screen a { color: var(--primary); }
+
+.network-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px 18px;
+  flex-wrap: wrap;
+}
+
+.network-title h1 {
+  margin: 0;
+  font-size: clamp(1.6rem, 3.5vw, 2.45rem);
+  line-height: 1.16;
+  letter-spacing: -0.04em;
+}
+
+.network-controls {
+  display: flex;
+  align-items: end;
+  gap: 12px 24px;
+  flex-wrap: wrap;
+  padding: 14px 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.network-controls > label:first-child { flex: 1 1 280px; }
+.network-controls p { margin: 0; color: var(--text-muted); }
+.network-country { display: flex; align-items: flex-end; gap: 8px; }
+.network-country input { width: 100%; }
+
+.network-results {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 18px;
+}
+
+.network-explorer,
+.network-list {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+}
+
+.network-list h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 650;
+}
+
+.network-limit {
+  margin: -7px 0 0;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+
+.network-map-card {
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.network-map {
+  height: clamp(290px, 47vh, 480px);
+  background: var(--surface-2);
+}
+
+.network-map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  padding: 8px 12px;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.network-map-legend span { display: inline-flex; align-items: center; gap: 5px; }
+.network-map-dot { width: 8px; height: 8px; border-radius: 50%; background: #64748b; }
+.network-map-dot.is-operational { background: var(--primary); }
+.network-station-details { scroll-margin-block: 12px; }
+
+.network-stations {
+  display: grid;
+  gap: 12px;
+}
+
+.network-connectors { padding: 0; list-style: none; }
+
+.network-connectors li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid var(--border);
+  padding: 8px 0;
+}
+
+@media (max-width: 780px) {
+  .network-results { grid-template-columns: minmax(0, 1fr); }
+  .network-map { height: 320px; }
+}

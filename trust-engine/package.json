@@ -1,0 +1,17 @@
+{
+  "name": "ev-charging-trust-engine",
+  "version": "1.0.0",
+  "description": "Off-chain Beta-reputation trust engine for the EV charging trust registry",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.0",
+    "express": "^4.19.2",
+    "mongodb": "^6.22.0"
+  }
+}
